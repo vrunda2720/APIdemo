@@ -1,0 +1,73 @@
+﻿<Window x:Class="APIDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:APIDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel Margin="5" Orientation="Horizontal">
+                <TextBlock Name="blocktimeandweather" Text="Get Weather and Time:-" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="300" FontSize="20"></TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="5" Orientation="Horizontal">
+                <TextBlock Name="blockcity" Text="City:-" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="100" FontSize="15"></TextBlock>
+                <TextBox Name="boxcity" Height="30" Width="200" />
+
+            </StackPanel>
+
+            <StackPanel Margin="5" Orientation="Vertical">
+                <Button Name="btnTimeTemp" Content="Search" Height="30" Width="100" Click="BtnTimeTemp_Click"></Button>
+            </StackPanel>
+
+            <StackPanel Margin="5" Orientation="Horizontal">
+                <TextBlock Name="blocktemp" Text="Temp:-" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="100" FontSize="15"></TextBlock>
+                <TextBox Name="boxtemp" Height="30" Width="200" />
+                <TextBlock Name="blocktime" Text="Time:-" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="100" FontSize="15"></TextBlock>
+                <TextBox Name="boxtime" Height="30" Width="200" />
+
+            </StackPanel >
+            <StackPanel Margin="5">
+                <TextBlock Name="blockcurrency" Text="Currency Coverter:-" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="300" FontSize="20"></TextBlock>
+            </StackPanel>
+
+            <StackPanel Margin="5" Orientation="Horizontal">
+                <TextBlock Name="blockamount" Text="Amount:-" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" FontSize="15"></TextBlock>
+                <TextBox Name="boxamount" Height="30" Width="200" />
+            </StackPanel >
+
+            <StackPanel Margin="5" Orientation="Horizontal">
+                <TextBlock Name="blockfrom" Text="From:-" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" FontSize="15"></TextBlock>
+                <ComboBox Name="comboboxfrom" Height="30" Width="300">
+                    <ComboBoxItem Content = "USD"/>
+                    <ComboBoxItem Content = "CAD"/>
+                    <ComboBoxItem Content = "INR"/>
+                    <ComboBoxItem Content = "EURO"/>
+
+                </ComboBox>
+            </StackPanel >
+
+            <StackPanel Margin="5" Orientation="Horizontal">
+                <TextBlock Name="blockto" Text="To:-" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" FontSize="15"></TextBlock>
+                <ComboBox Name="comboboxto" Height="30" Width="300">
+                    <ComboBoxItem Content = "USD"/>
+                    <ComboBoxItem Content = "CAD"/>
+                    <ComboBoxItem Content = "INR"/>
+                    <ComboBoxItem Content = "EURO"/>
+
+                </ComboBox>
+            </StackPanel >
+
+            <StackPanel Margin="5" Orientation="Vertical">
+                <Button Name="btnCurrency" Content="Go" Height="30" Width="100" Click="BtnCurrency_Click"></Button>
+            </StackPanel>
+
+            <StackPanel Margin="5" Orientation="Horizontal">
+                <TextBlock Name="blockconverted" Text="Converted:-" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" FontSize="15"></TextBlock>
+                <TextBox Name="boxconverted" Height="30" Width="200" />
+            </StackPanel >
+        </StackPanel>
+    </Grid>
+</Window>
